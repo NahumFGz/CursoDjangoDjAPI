@@ -1,4 +1,10 @@
-"""project01 URL Configuration
+"""
+# Llama a todas las URLs
+# Al hacer la busqueda busca la ruta en urlpatterns y ejecuta la funcion del lado de la derecha del path
+
+"""
+
+"""empleado URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -16,6 +22,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+def PruebaUrl(self):
+    print('===============HOLA===============')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('prueba/', PruebaUrl),
 ]
+
+
